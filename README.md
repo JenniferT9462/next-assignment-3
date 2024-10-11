@@ -1,40 +1,95 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Three-Page Website with Next.js
 
-## Getting Started
+## Overview
 
-First, run the development server:
+In this assignment, you will create a three-page website using Next.js. The site will include a splash page, an about page, and a gallery page. The pages will be styled using Bootstrap, and you will manage static images from the public/ directory. For a bonus, you can integrate the cowsay library and create custom styles using CSS files.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# Set Up
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+- In your system terminal make sure you are in the directory that you want your Next app to go. To see where you are you can run:
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+        pwd
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+- If you need to navigate somewhere else, to see the files in your current directory, you can run:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+        ls
 
-## Learn More
+- You can move into the correct directory by running:
 
-To learn more about Next.js, take a look at the following resources:
+        cd <desired directory>
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Create a New Next.js Application
+    * Run - NOTE: if we run w/out a project name, the terminal will ask us to enter a project name. 
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+            npx create-next-app@latest
+    
+- You will then be asked a series of questions...
 
-## Deploy on Vercel
+    ![terminal questions](<terminal.png>)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Navigate to your new project by running:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+        cd next-assignment-3
+
+- Then you can open a VScode window by running: 
+
+        code .
+
+- Create a new repository on Github. NOTE: don't select add README or .gitignore
+    * Quick set up will pop up...Run the code that says Add repo to existing repo on the command-line. 
+
+- Add your Next app to your new repository by running this in bash terminal:
+
+        git remote add origin https://github.com/yourusername/your-repository.git
+        git branch -M main
+        git push -u origin main
+
+# Pages to Create:
+
+* Splash Page (src/pages/index.js):
+    - A landing page featuring a large background image.
+        This page should display a welcome message.
+
+* About Page (src/pages/about/index.js):
+    - A page with information about you (or a fictional person/company), containing text, an image, and a list of facts/achievements.
+
+* Gallery Page (src/pages/gallery/index.js):
+    - A page displaying at least 6 images in a grid layout.
+    - Images should come from sources such as Pexels.com, AI-generated images, or other royalty-free sources.
+
+# Requirements:
+
+* Set Up a New Next.js Project:
+    - Use create-next-app to generate the initial project structure.
+
+* Install and Import Bootstrap:
+    - Install Bootstrap in your project and import it into your pages for styling.
+
+* Splash Page (src/pages/index.js):
+    - Create a large background image and a welcome message styled with Bootstrap.
+    - Use the public/ directory for storing static images.
+        - Example: Place your splash image in public/splash-image.jpg.
+
+* About Page (src/about/index.js):
+    - Include a heading, text, an image, and a list of facts or achievements.
+    - Use Bootstrap for styling.
+
+* Gallery Page (src/pages/gallery/index.js):
+    - Display at least 6 images in a grid layout using Bootstrap grid classes.
+    - Store gallery images in the public/ folder and reference them using relative paths (e.g., /gallery/img1.jpg).
+
+# Bonus (Optional):
+
+* Cowsay Integration (Optional):
+    - Add cowsay to your About Page for fun. Install cowsay with:
+
+        npm install cowsay
+
+    - Import and use it on the About page.
+
+* Custom CSS:
+    - Create your own CSS styles and apply them to your pages. Place your styles in the styles directory and import them into your pages.
+
+
+
