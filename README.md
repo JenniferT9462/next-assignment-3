@@ -43,6 +43,13 @@ In this assignment, you will create a three-page website using Next.js. The site
     * To install dependencies
 
 
+- To start development server run:
+
+         npm run dev
+
+- This will start the development server, and your Next.js app will be accessible at http://localhost:3000 in your web browser.
+
+
 - Create a new repository on Github. NOTE: don't select add README or .gitignore
     * Quick set up will pop up...Run the code that says Add repo to existing repo on the command-line. 
 
