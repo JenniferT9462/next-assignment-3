@@ -36,6 +36,13 @@ In this assignment, you will create a three-page website using Next.js. The site
 
         code .
 
+- In your editor's terminal(bash) run:
+
+        npm install
+
+    * To install dependencies
+
+
 - Create a new repository on Github. NOTE: don't select add README or .gitignore
     * Quick set up will pop up...Run the code that says Add repo to existing repo on the command-line. 
 
